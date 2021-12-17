@@ -3,5 +3,7 @@
     "description": "my first composer",
     "type": "project",
     "license": "free",
-    "require": {}
+    "require": {
+        "wixel/gump": "^1.11"
+    }
 }
