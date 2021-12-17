@@ -142,7 +142,7 @@ if(isset($data['do_signup'])) {
 		</form>
 		<br>
 		<p>Если вы зарегистрированы, тогда нажмите <a href="login.php">здесь</a>.</p>
-		<p>Вернуться на <a href="index.php">главную</a>.</p>
+		<p>Вернуться на <a href="../index.php">главную</a>.</p>
 			</div>
 		</div>
 	</div>

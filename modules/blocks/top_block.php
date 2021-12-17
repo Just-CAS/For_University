@@ -9,6 +9,18 @@
                             </a>
                         </div>
                         <div class="col-md-1 col-md-offset-8 col-xs-2 text-center">
+                            <div class="button-corrextor">
+
+
+                                <?php if(isset($_SESSION['logged_user'])) : ?>
+                                    <a href="modules/logout.php" class="btn btn-lg btn-danger" role="button">Привет, <?php echo $_SESSION['logged_user']->name; ?> <i style="font-size: 12px;" class="typcn typcn-heart-full-outline"></i>-
+                                    <!-- Пользователь может нажать выйти для выхода из системы -->
+                                    Выйти?</a> <!-- файл logout.php создадим ниже -->
+                                <?php else : ?>
+                                    <a href="modules/login.php" class="btn btn-primary btn-lg" role="button"> Вход</a>
+                                <?php endif; ?>
+
+                            </div>
                           <div class="menu-btn"><span class="hamburger">&#9776;</span></div>
                         </div>
                     </div>

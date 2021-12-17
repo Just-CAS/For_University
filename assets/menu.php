@@ -1,18 +1,20 @@
 <?php
-	require "assets/data/db.php";
+	require_once "assets/data/db.php";
 ?>
-<nav class="pushy pushy-left">
-<ul class="list-unstyled">
-<?php if(isset($_SESSION['logged_user'])) : ?>
-Привет, <?php echo $_SESSION['logged_user']->name; ?></br>
-<!-- Пользователь может нажать выйти для выхода из системы -->
-<a href="modules/logout.php">Выйти</a> <!-- файл logout.php создадим ниже -->
-<?php else : ?>
-<!-- Если пользователь не авторизован выведет ссылки на авторизацию и регистрацию -->
-<a href="modules/login.php">Авторизоваться</a><br>
-<a href="modules/signup.php">Регистрация</a>
-<?php endif; ?>
 
+<nav class="pushy pushy-left">
+  <div class="entrace-buttonz">
+    <?php if(isset($_SESSION['logged_user'])) : ?>
+        <a style="font-size: 12px;" href="modules/logout.php" class="btn btn-lg btn-danger" role="button">Привет, <?php echo $_SESSION['logged_user']->name; ?> <i style="font-size: 12px;" class="typcn typcn-heart-full-outline"></i> -
+        <!-- Пользователь может нажать выйти для выхода из системы -->
+        Выйти?</a> <!-- файл logout.php создадим ниже -->
+    <?php else : ?>
+        <!-- Если пользователь не авторизован выведет ссылки на авторизацию и регистрацию -->
+        <a class="btn btn-primary btn-lg" role="button" href="modules/login.php">Вход</a>
+        <a href="modules/signup.php" class="btn btn-lg btn-danger" role="button">Регистрация</a>
+    <?php endif; ?>
+    </div>
+<ul class="list-unstyled">
 <?php
    $menu_caller = R::getAll( 'select * from menu' );
 	foreach($menu_caller as $row){

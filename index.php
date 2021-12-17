@@ -2,6 +2,8 @@
  require('tpler/render.php');
 // двумерный массив со списком записей
  require('assets/arrays.php');
+require_once "vendor/autoload.php";
+
 // HTML код главной страницы
 $page_content = renderTemplate('assets/main.php', ['items' => $items_list]);
 // окончательный HTML код

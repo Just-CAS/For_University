@@ -15,6 +15,15 @@
                                     <input name="submit" type="submit" class="btn btn-danger"></button>
 									</form>
                                 </div>
+                                <div class="col-md-6">
+                                    <form method="post" action="modules/wigump.php">
+                                        <input type="text" class="form-control" name="user_name" placeholder="Your Name Here...">
+                                        <br>
+                                        <input type="text" class="form-control" name="user_password" placeholder="Your password Here...">
+                                        <br>
+                                        <input name="submit" type="submit" class="btn btn-danger"></button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>

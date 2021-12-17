@@ -1,0 +1,7 @@
+{
+    "name": "user/localhost",
+    "description": "my first composer",
+    "type": "project",
+    "license": "free",
+    "require": {}
+}

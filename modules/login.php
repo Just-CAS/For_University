@@ -35,7 +35,7 @@ if(isset($data['do_login'])) {
 
 if(!empty($errors)) {
 
-		echo '<div style="color: red; ">' . array_shift($errors). '</div><hr>';
+		echo '<div style="color: #ff0000; ">' . array_shift($errors). '</div><hr>';
 
 	}
 
@@ -54,7 +54,7 @@ if(!empty($errors)) {
 		</form>
 		<br>
 		<p>Если вы еще не зарегистрированы, тогда нажмите <a href="signup.php">здесь</a>.</p>
-		<p>Вернуться на <a href="index.php">главную</a>.</p>
+		<p>Вернуться на <a href="../index.php">главную</a>.</p>
 			</div>
 		</div>
 	</div>
